@@ -1,0 +1,18 @@
+.Title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.t {
+  justify-content: center;
+  justify-content: space-around;
+}

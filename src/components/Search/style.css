@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.search-icon {
+  margin-right: 5px;
+}
+
+.search-input {
+}
+.search-checklist {
+  display: flex;
+
+  margin-left: 40px;
+}
