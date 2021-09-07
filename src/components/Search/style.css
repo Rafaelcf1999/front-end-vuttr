@@ -10,11 +10,18 @@
   align-items: flex-end;
   justify-content: space-around;
 }
+
 .search-icon {
   margin-right: 5px;
 }
 
-.search-input {
+.teste {
+  width: 403px;
+  height: 50px;
+  background: #7271713f 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  opacity: 1;
 }
 .search-checklist {
   display: flex;

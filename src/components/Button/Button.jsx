@@ -41,10 +41,6 @@ export default function Buttons() {
     console.log(newNote);
   };
 
-  // const add = () => {
-  //   const res = api.post(`http://localhost:3000/tools`);
-  // };
-
   const deleteTag = (index) => {
     setTags((prevState) => prevState.filter((tag, i) => i !== index));
   };
@@ -103,7 +99,7 @@ export default function Buttons() {
         aria-describedby="alert-dialog-description"
         className="card-add-tool ">
         <div className="card-add-tool ">
-          <DialogTitle id="alert-dialog-title">
+          <DialogTitle id="alert-dialog-title t">
             <IoAdd className="button-icon" />
             {"Add new tool"}
           </DialogTitle>
@@ -168,9 +164,11 @@ export default function Buttons() {
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={onSubmitTool} refresh="true">
-              Add tool
-            </Button>
+            <div className="button-add">
+              <Button onClick={onSubmitTool} refresh="true">
+                Add tool
+              </Button>
+            </div>
           </DialogActions>
         </div>
       </Dialog>

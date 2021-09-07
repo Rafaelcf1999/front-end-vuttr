@@ -25,6 +25,7 @@ export default function Notes(props) {
   };
   const notes = props.notes;
 
+  // delete notes by id
   const handleConfirmCloseDelete = async (event) => {
     await api.delete(`${process.env.REACT_APP_BASE_URL}/${event}`);
     setConfirmOpen(false);

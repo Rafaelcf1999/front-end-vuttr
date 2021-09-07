@@ -26,7 +26,8 @@ class App extends Component {
     this.setState(newState);
   }
 
-  async handleText(evento) {
+  // search notes by tags and words
+  async handleTextSearch(evento) {
     const search = evento.target.value;
     const res = await api.get(
       `${process.env.REACT_APP_BASE_URL}?${
@@ -45,37 +46,14 @@ class App extends Component {
     });
   };
 
-  // async addNotes(event, event1, event2, event3) {
-  //   const Headers = {'Content-Type':'application/json'},
-  //   const article = {
-  //     body:JSON.stringify({
-  //     name:event,
-  //     link:event1,
-  //     description:event2,
-  //     tags:event3
-  //   })
-  //   };
-  //   const res = await api.post(`http://localhost:3000/tools`,article,Headers);
-  //   console.log("submite", res);
-  // }
-
-  async deleteNote() {
-    // let arrayDeNotas = this.state.notes;
-    // const id = event.target.value;
-    // const res = await api.delete(`http://localhost:3000/tools/${id}`);
-    // arrayDeNotas.splice(index);
-    console.log("delete");
-  }
-
   render() {
     return (
       <div>
         <Title />
         <Search
-          handleText={this.handleText.bind(this)}
+          handleTextSearch={this.handleTextSearch.bind(this)}
           isChecked={this.state.isChecked}
           toggleChange={this.toggleChange}
-          // add={this.addNotes.bind(this)}
         />
         <Notes notes={this.state.notes} delete={this.deleteNote} />
       </div>

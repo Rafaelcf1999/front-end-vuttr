@@ -1,3 +1,8 @@
+.button-add {
+  background: #365df0 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
 .button-icon {
   margin-right: 5px;
 }
@@ -53,9 +58,9 @@
   padding-right: 5px;
   border: 1px solid rgba(70, 70, 87, 0.479);
   border-radius: 5px;
-  background-color: #3f51b5;
+  background: #ffffff 0% 0% no-repeat padding-box;
   white-space: nowrap;
-  color: white;
+  color: black;
   max-width: fit-content;
 }
 
@@ -65,5 +70,6 @@
   border: none;
   background-color: unset;
   cursor: pointer;
-  color: white;
+
+  color: #170c3a;
 }
